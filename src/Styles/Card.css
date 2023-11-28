@@ -1,0 +1,86 @@
+.cardBG {
+  border: 5px solid #ff0;
+}
+
+.bg-Image {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.cardFrame {
+  overflow: hidden;
+  position: relative;
+  /* margin: 0 24px 32px 24px; */
+  margin-bottom: 32px;
+  /* margin-right: 24px; */
+  padding: 16px;
+  height: 200px;
+  min-width: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  transition: 0.4s ease-in-out;
+}
+
+.cardFrame:hover {
+  -webkit-box-shadow: 0px 0px 13.5px 4.5px #b100ff;
+  -moz-box-shadow: 0px 0px 13.5px 4.5px #b100ff;
+  box-shadow: 0px 0px 13.5px 4.5px #b100ff;
+}
+
+@media screen and (max-width: 426px) {
+  .cardFrame {
+    min-width: 320px;
+    /* margin: 20px 20px; */
+  }
+}
+
+span {
+  color: #fff;
+}
+.rowTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topLeft {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+/* img {
+  display: flex;
+} */
+.rowEnd,
+.rowMiddle {
+  margin-top: 36px;
+}
+.name {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.cardDetail {
+  display: flex;
+  justify-content: space-between;
+}
+.cardNumber,
+.customerName {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+}
+.rowEnd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rowEnd span {
+  font-size: 13px;
+  font-weight: 500;
+}
