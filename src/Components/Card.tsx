@@ -20,24 +20,15 @@ function Card({ label, customerName, cardNumber, expiryDate }: CardProps) {
         transformStyle: "preserve-3d"
       }}>
       <div
-        className="absolute top-0 left-0 w-full h-full flex flex-col justify-center bg-cover p-6 bg-[url('/public/bg.svg')]  transition-all duration-100 delay-200 z-20"
+        className="absolute top-0 left-0 w-full h-full flex flex-col justify-between bg-cover p-6 bg-[url('/public/bg.svg')]  transition-all duration-100 delay-200 z-20"
         style={{
           transform: "rotateY(0deg)"
         }}>
-        {/* <div className="flex justify-between items-center">
-          <img
-            src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/chip.png"
-            alt="Smart card"
-            className="w-12"
-          />
+        <div className="flex justify-between items-center">
+          <img src="/public/1.svg" alt="Smart card" className="w-12" />
 
-          <img
-            src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/visa.png"
-            alt="Visa image"
-            className="w-12"
-          />
-        </div> */}
-
+          <img src="/public/2.svg" alt="Visa image"  />
+        </div>
         <div className="">
           <label className="hidden">Card Number</label>
           <input
@@ -54,8 +45,8 @@ function Card({ label, customerName, cardNumber, expiryDate }: CardProps) {
             <input
               type="text"
               id=""
-              value="Daniel Castillo Guindos"
-              className="outline-none bg-transparent"
+              value="Mohammad Hossain"
+              className="outline-none bg-transparent text-base"
             />
           </div>
 
